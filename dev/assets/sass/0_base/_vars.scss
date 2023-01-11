@@ -1,0 +1,28 @@
+//baseWidth
+$baseWidth:1220px;
+
+$mainFonts : KozGoPr6N,"游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+
+//color common
+:root {
+    --border: #9FA0A0;
+    --gray-btn: #898989;
+    --red: #E40012;
+    --pink: #EA6C8C;
+    --purple: #A56AA9;
+    --green: #8FC31F;
+    --orange: #EF9400;
+    --str-green: #5C9654;
+    --yellow: #FFF112;
+    --str-blue: #172A84;
+    --royal-blue: #5D7CBC;
+    --lig-blue: #579DD6;
+    --primary: #5FB4B6;
+
+    --cat-yellow: #FBCC34;
+    --cat-green: #9ECA4A;
+    --cat-purple: #B86BBD;
+    --cat-blue: #3CACFF;
+    --cat-orange: #F3A035;
+    --cat-str-green: #258659;
+}

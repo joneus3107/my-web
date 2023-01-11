@@ -1,0 +1,31 @@
+.c-radio,.c-checkbox {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+// --- Radio ---
+.c-radio {
+    
+}
+
+// --- Text ---
+.c-input {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 3.5px 5px;
+    font-family: $mainFonts;
+}
+
+//--- Checkbox ---
+.c-checkbox {
+
+}
+
+@media screen and (max-width: 768px) {
+    .c-radio,.c-checkbox,.c-input {
+        font-size: 1.2rem;
+    }
+}

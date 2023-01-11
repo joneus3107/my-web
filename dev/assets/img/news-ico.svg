@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.03 72.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+        font-family: KozGoPr6N-Heavy-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 21.9px;
+        font-weight: 800;
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        fill: #fff112;
+      }
+    </style>
+  </defs>
+  <g id="_ヘッダー" data-name="ヘッダー">
+    <g>
+      <g>
+        <polyline class="cls-2" points="0 30.33 0 61.26 24.39 48.18 110.03 72.56 110.03 30.93"/>
+        <polyline class="cls-2" points="0 42.23 0 11.3 24.39 24.39 110.03 0 110.03 41.63"/>
+      </g>
+      <text class="cls-1" transform="translate(27.35 44.88)"><tspan x="0" y="0">NEWS</tspan></text>
+    </g>
+  </g>
+</svg>

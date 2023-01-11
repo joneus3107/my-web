@@ -1,0 +1,123 @@
+.p-about {
+    padding-bottom: 50px;
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        ol {
+            list-style: none;
+            counter-reset: aboutList;
+            margin-right: 70px;
+            font-weight: bold;
+            li {
+                display: flex;
+                align-items: baseline;
+                counter-increment: aboutList;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+                span {
+                    display: inline-block;
+                }
+                &::before {
+                    content: counter(aboutList);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 12px;
+                    height: 12px;
+                    font-size: 1rem;
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                    font-weight: bold;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    &__thumbnail,p {
+        margin: 25px 0;
+    }
+    &__history {
+        li {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            padding: 7px 8px;
+            &:nth-child(even) {
+                background-color: #00000026;
+            }
+            p {
+                width: 15%;
+                padding-right: 10px;
+                margin: 0;
+                &:last-child {
+                    width: 70%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    &__tableImg {
+        margin: 25px 0;
+    }
+    .l-child-page__article {
+        h4,h3 {
+            font-size: 2.5rem;
+        }
+        h4 {
+            color: var(--red);
+            margin-bottom: -20px;
+        }
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .p-about {
+        &__title {
+            text-align: left;
+            padding-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-about {
+        &__list {
+            margin-bottom: 30px;
+            ol {
+                width: 100%;
+            }
+            img {
+                width: 60%;
+                max-width: 400px;
+                margin: 25px auto 0;
+            }
+        }
+        &__history {
+            li {
+                p {
+                    width: auto;
+                    &:last-child{
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .l-child-page__article {
+            h3 {
+                margin-bottom: 15px;
+            }
+            h4,h3 {
+                font-size: 1.8rem;
+            } 
+        }
+    }
+}

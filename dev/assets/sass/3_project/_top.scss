@@ -1,0 +1,158 @@
+.p-top {
+    &1 {
+        padding: 43px 0 20px;
+        background: url(../img/mv_bg.png) #5FB4B6 no-repeat center;
+        background-size: cover;
+        height: 900px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 2.1rem;
+        box-sizing: border-box;
+        &__content {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            align-items: flex-end;
+            &2 {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .c-box {
+                    height: 116px;
+                }
+            }
+        }
+        &__desc {
+            line-height: 1.38;
+        }
+        &__column {
+            width: 46.9%;
+            margin-top: 33px;
+            &:first-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            &:last-child {
+                width: 51%;
+            }
+        }
+        &__item {
+            width: var(--item-width);
+            a:not(.c-box__btn) {
+                display: block;
+                color: #fff;
+                &:hover {
+                    .c-box {
+                        &::before {
+                            opacity: 0.3;
+                        }
+                    }
+                }
+            }
+            // p {
+            //     font-size: 1.9rem;
+            //     font-weight: 700;
+            //     letter-spacing: 0.02em;
+            //     line-height: 1.15;
+            //     font-feature-settings: "palt";
+            //     margin-top: 11px;
+            // }
+            .c-box {
+                // height: 592.63px;
+                img[alt='map'] {
+                    margin: 45px 0 0 40px;
+                }
+            }
+            &--line-1 {
+                margin-bottom: 50px;
+                .c-box {
+                    height: 203.66px;
+                }
+            }
+            &--line-2 {
+                margin-bottom: 40px;
+                .c-box{
+                    height: 187.58px;
+                }
+            }
+            &--line-3 {
+                .c-box{
+                    height: 116px;
+                }
+            }
+        }
+    }
+    &2 {
+        padding: 27px 0 120px;
+        .c-list-news {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .c-banners {
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-top {
+        &1 {
+            font-size: 1.2rem;
+            padding: 30px 0 ;
+            height: auto;
+            &__item {
+                // p {
+                //     font-size: 1rem;
+                // }
+                &--line-1 {
+                    margin-bottom: 30px;
+                    .c-box {
+                        height: auto;
+                    }
+                }
+                &--line-2 {
+                    margin-bottom: 20px;
+                    .c-box{
+                        height: auto;
+                    }
+                }
+                &--line-3 {
+                    .c-box{
+                        height: 80px;
+                    }
+                }
+            }
+            &__column {
+                width: 100%!important;
+                &:last-child {
+                    .p-top1 {
+                        &__item {
+                            .c-box {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &2 {
+            padding: 40px 0;
+            &__artical {
+                width: 100%;
+            }
+            &__aside {
+                width: 90%;
+                margin: 0 auto 30px;
+            }
+            .c-list-news {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

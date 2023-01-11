@@ -1,0 +1,177 @@
+.c-list-news {
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 26px;
+        h3 {
+            // color: #fff;
+            // background-color: var(--primary);
+            font-size: 2.64rem;
+            // width: calc(100% - 118px);
+            box-sizing: border-box;
+            padding: 0 7px;
+            margin-left: 65px;
+            // &::before {
+            //     content: '▶';
+            //     display: inline-block;
+            //     color: inherit;
+            //     font-size: inherit;
+            //     margin-right: 13px;
+            // }
+        }
+    }
+    &__content {
+        margin-top: 6px;
+    }
+    &__item {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 25px;
+        &:not(:first-child){
+            padding-top: 15px;
+        }
+    }
+    &__date {
+        font-size: 2.16rem;
+        min-width: 9%;
+        margin-bottom: 10px;
+    }
+    &__cat {
+        display: flex;
+        align-items: baseline;
+        min-width: 70%;
+        margin-bottom: 10px;
+        span {
+            --bg-color: var(--primary);
+            font-size: 1.1rem;
+            color: #fff;
+            line-height: 1;
+            background-color: var(--bg-color);
+            padding: 3.5px 5px;
+            border-radius: 4px;
+        }
+    }
+    &__item-title {
+        font-size: 2.16rem;
+        line-height: 1.3;
+        color: var(--primary);
+        width: 100%;
+        position: relative;
+        a{
+            transition: 0.3s all ease-in-out;
+            display: flex;
+            width: 100%;
+            p {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 30%;
+            }
+            img {
+                margin-right: 5px;
+                width: 10.43%;
+            }
+            span {
+                display: inline-block;
+                max-width: calc(100% - 10.43% - 5px);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-top: 3px solid var(--primary);
+            border-right: 3px solid var(--primary);
+            top: 50%;
+            right: 10%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+    &__more {
+        text-align: right;
+        margin-top: 25px;
+        a {
+            font-size: 1.438rem;
+            font-weight: 500;
+            transition: 0.3s all ease-in-out;
+            color: #fff;
+            background-color: var(--primary);
+            padding: 5px 27.5px;
+            border-radius: 4px;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    &--no-img {
+        .c-list-news {
+            &__title {
+                h3 {
+                    width: 100%;
+                }
+            }
+            &__content {
+                margin-top: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-list-news {
+        &__title {
+            margin-bottom: 20px;
+            img{
+                max-width: 10%;
+            }
+            h3 {
+                font-size: 1.6rem;
+                margin-left: 15px;
+            }
+            &--no-img {
+                h3 {
+                    width: 100%;
+                }
+            }
+        }
+        &__date,&__cat {
+            width: 100%;
+        }
+        &__date{
+            font-size: 1.2rem;
+        }
+        &__item-title {
+            font-size: 1.4rem;
+            &::before {
+                width: 8px;
+                height: 8px;
+            }
+            a {
+                img {
+                    width: 15.43%;
+                }
+                span {
+                    max-width: calc(100% - 15.43% - 5px);
+                }
+            }
+        }
+        &__more {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

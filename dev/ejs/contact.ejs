@@ -1,0 +1,122 @@
+<%- include('inc/_header'); %>
+    <!--▼ Content area ▼-->
+    <main class="p-contact">
+        <%- include('inc/_page-menu'); %>
+        <section class="p-contact__contact">
+            <div class="l-container">
+                <ul class="c-breadcrumb">
+                    <li class="c-breadcrumb__homepage">
+                        <a href="index.html">
+                            <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
+                        </a>
+                    </li>
+                    <li>
+                        お問い合わせ
+                    </li>
+                </ul>
+                <h2  class="c-page-title">お問い合わせ</h2>
+                <form class="c-form" action="" method="post">
+                    <p class="c-form__notice">
+                        ※は入力必須項目になります。
+                    </p>
+                    <div class="c-form__row">
+                        <p class="c-form__label">
+                            <label for="">会社名(漢字)</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">会社名(カナ)</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">氏名(漢字)</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">氏名(カナ)</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label">
+                            <label for="">所属部署</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label">
+                            <label for="">役職</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">ご住所</label>
+                        </p>
+                        <div class="c-form__input">
+                            <span>〒</span><input type="text">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">電話番号</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="tel">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label">
+                            <label for="">FAX 番号</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label c-form__label--required">
+                            <label for="">会メールアドレス</label>
+                        </p>
+                        <div class="c-form__input">
+                            <input type="email">
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <p class="c-form__label">
+                            <label for="">お問い合わせ内容</label>
+                        </p>
+                        <div class="c-form__input">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="c-form__submit">
+                        <button>内容を確認する</button>
+                    </div>
+                </form>
+                <section class="p-contact__info">
+                    <h4>お問い合わせ先</h4>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>

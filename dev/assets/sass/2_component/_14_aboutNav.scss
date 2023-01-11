@@ -1,0 +1,55 @@
+.c-aboutNav {
+    --border-color: #2318158a;
+    position: sticky;
+    top: calc(5% + 85px);
+    left: 0;
+    h3 {
+        color: var(--red);
+        font-size: 2.5rem;
+        border-bottom: 1.5px solid var(--border-color);
+        padding-bottom: 6px;
+        line-height: 1.2;
+        span {
+            display: inline-block;
+        }
+    }
+    a {
+        display: block;
+        font-size: 1.8rem;
+        padding: 15px 5px;
+        border-bottom: 1px dashed var(--border-color);
+        position: relative;
+        z-index: 2;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: 0.5s all ease-in-out;
+            background-color: #e4001217;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-aboutNav {
+        h3{
+            padding: 10px;
+            font-size: 1.6rem;
+        }
+        a {
+            font-size: 1.2rem;
+            padding: 7px 5px;
+        }
+    }
+}

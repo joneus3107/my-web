@@ -1,0 +1,121 @@
+.p-single-result-01 {
+    padding-bottom: 30px;
+    &__tags {
+        display: flex;
+        align-items: baseline;
+        margin-top: 31px;
+        li {
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+            span{
+                font-size: 1.7rem;
+                font-weight: 500;
+                color: #fff;
+                background-color: var(--mainColor);
+                line-height: 1;
+                display: inline-block;
+                padding: 3px 14.5px;
+            }
+        }
+    }
+    &__info {
+        font-size: 1.7rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        li {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+    }
+    &__content {
+        h3 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 14px 0;
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 1.43;
+            font-weight: 700;
+            margin-top: 13px;
+        }
+        h5 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            line-height: 1;
+            border: 1px solid var(--mainColor);
+            background-color: #fff;
+            color: var(--mainColor);
+            display: inline-block;
+            padding: 6.5px 9px;
+            margin-top: 10px;
+        }
+    }
+    &__answer {
+        margin-top: 83px;
+    }
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+        tr {
+            &:not(:first-child) {
+                border-top: 1px solid #00000059;
+            }
+        }
+        th {
+            text-align: left;
+            font-size: 1.8rem;
+            padding: 10px;
+        }
+        td {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 15px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-single-result-01 {
+        &__tags {
+            margin-top: 15px;
+            li {
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        &__content {
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            h5 {
+                font-size: 1.6rem;
+                padding: 3px 5px;
+            }
+        }
+        &__info {
+            font-size: 1.4rem;
+        }
+        &__box-table {
+            max-width: 100%;
+            overflow-x: scroll;
+        }
+        &__table {
+            min-width: 500px;
+            th {
+                font-size: 1.4rem;
+            }
+            td {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

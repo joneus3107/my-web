@@ -1,0 +1,23 @@
+.p-single-dtb-02 {
+    padding-bottom: 120px;
+    .c-title {
+        margin-bottom: 15px;
+    }
+    &__thumbnail {
+        width: 31.26%;
+        margin: 0 auto 35px;
+        img{
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-single-dtb-02 {
+        &__thumbnail {
+            width: 70%;
+            max-width: 280px;
+        }
+    }
+}

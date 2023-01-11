@@ -1,0 +1,30 @@
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+.c-title {
+    font-size: 3.9rem;
+    font-weight: 900;
+    color: var(--mainColor);
+    text-align: center;
+}
+
+.c-back {
+    a {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-title {
+        font-size: 2.6rem;
+    }
+
+    .c-back {
+        a {
+            font-size: 1.2rem;
+        }
+    }
+}
+/*
+------------------------------------------------------------*/

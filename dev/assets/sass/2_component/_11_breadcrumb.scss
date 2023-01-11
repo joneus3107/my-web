@@ -1,0 +1,33 @@
+.c-breadcrumb {
+    display: flex;
+    align-items: baseline;
+    margin: 55px 0 30px;
+    li {
+        font-size: 2rem;
+        &:not(:last-child) {
+            padding-right: 35px;
+            position: relative;
+            &::after {
+                content: '>';
+                position: absolute;
+                top: 50%;
+                right: calc(35px / 2);
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-breadcrumb {
+        margin: 25px 0 15px;
+        &__homepage {
+            img {
+                max-width: 20px;
+            }
+        }
+        li {
+            font-size: 1.5rem;
+        }
+    }
+}

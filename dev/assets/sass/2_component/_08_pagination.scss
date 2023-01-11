@@ -1,0 +1,26 @@
+.c-pagination {
+    margin: 26px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    .page-numbers {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &.current,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-pagination {
+        font-size: 1.4rem;
+    }
+}

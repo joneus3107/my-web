@@ -1,0 +1,482 @@
+<%- include('inc/_header'); %>
+    <!--▼ Content area ▼-->
+    <main class="p-database">
+        <%- include('inc/_page-menu'); %>
+        <div class="p-database__content">
+            <div class="l-container">
+                <ul class="c-breadcrumb">
+                    <li class="c-breadcrumb__homepage">
+                        <a href="index.html">
+                            <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
+                        </a>
+                    </li>
+                    <li>
+                        インフラメンテナンス　データベース
+                    </li>
+                </ul>
+                <section class="p-database__form">
+                    <h2 class="c-page-title">インフラメンテナンス　<br class="sp-only">データベース</h2>
+                    <form action="">
+                        <div class="c-filter-row c-filter-row--radio c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>検索キーワード</h3>
+                            </div>
+                            <div class="p-database__radio">
+                                <label class="c-radio">
+                                    <input type="radio" name="type" value="ニーズ・条件等">
+                                    ニーズ・条件等
+                                </label>
+                                <label class="c-radio">
+                                    <input type="radio" name="type" value="シーズ">
+                                    シーズ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-row">
+                            <input type="text" class="c-input">
+                        </div>
+                        <div class="c-filter-row c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>フォーラム</h3>
+                            </div>
+                        </div>
+                        <div class="c-filter-row">
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="北海道">
+                                    北海道
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="東北">
+                                    東北
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="関東">
+                                    関東
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="北陸">
+                                    北陸
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="中部">
+                                    中部
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="近畿">
+                                    近畿
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="中国">
+                                    中国
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="四国">
+                                    四国
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="九州">
+                                    九州
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="forum" value="沖縄">
+                                    沖縄
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-row c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>収集時期</h3>
+                            </div>
+                        </div>
+                        <div class="c-filter-row">
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2016">
+                                    2016
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2017">
+                                    2017
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2018">
+                                    2018
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2019">
+                                    2019
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2020">
+                                    2020
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2021">
+                                    2021
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="collect_time" value="2022">
+                                    2022
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-row c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>工種</h3>
+                            </div>
+                        </div>
+                        <div class="c-filter-row">
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="点検">
+                                    点検
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="診断">
+                                    診断
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="措置">
+                                    措置
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="記録">
+                                    記録
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="マネジメント全般">
+                                    マネジメント全般
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="work_type" value="その他">
+                                    その他
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-row c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>土木分野</h3>
+                            </div>
+                        </div>
+                        <div class="c-filter-row c-filter-row--mw-489">
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="道路">
+                                    道路
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="河川">
+                                    河川
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="ダム">
+                                    ダム
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="砂防">
+                                    砂防
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="港湾">
+                                    港湾
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="海岸">
+                                    海岸
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="下水">
+                                    下水
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="営繕">
+                                    営繕
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="公園">
+                                    公園
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="空港">
+                                    空港
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="鉄道">
+                                    鉄道
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="全般">
+                                    全般
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="civil_engineering" value="その他">
+                                    その他
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-row c-filter-row--title">
+                            <div class="p-database__title">
+                                <h3>ニーズ分類</h3>
+                            </div>
+                        </div>
+                        <div class="c-filter-row">
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="新技術の導入">
+                                    新技術の導入
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="民間活力の活用">
+                                    民間活力の活用
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="施設の集約・再編">
+                                    施設の集約・再編
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="組織・体制の強化、人材育成">
+                                    組織・体制の強化、人材育成
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="財政的な支援">
+                                    財政的な支援
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="入札契約制度">
+                                    入札契約制度
+                                </label>
+                            </div>
+                            <div class="c-checkbox">
+                                <label>
+                                    <input type="checkbox" name="needs" value="その他">
+                                    その他
+                                </label>
+                            </div>
+                        </div>
+                        <div class="c-filter-submit">
+                            <button type="submit">
+                                この条件で検索
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="l-container-fluid">
+                <section class="p-database__table">
+                    <div class="c-table">
+                        <div class="c-table__row">
+                            <div class="c-table__title-cell u-clickable">
+                                フォーラム<br><img src="../assets/img/clickable_ico.png" width="22" alt="clickable">
+                            </div>
+                            <div class="c-table__title-cell u-clickable">
+                                収集時期<br><img src="../assets/img/clickable_ico.png" width="22" alt="clickable">
+                            </div>
+                            <div class="c-table__title-cell u-clickable">
+                                工種<br><img src="../assets/img/clickable_ico.png" width="22" alt="clickable">
+                            </div>
+                            <div class="c-table__title-cell u-clickable">
+                                土木分野<br><img src="../assets/img/clickable_ico.png" width="22" alt="clickable">
+                            </div>
+                            <div class="c-table__title-cell u-clickable">
+                                ニーズ分類<br><img src="../assets/img/clickable_ico.png" width="22" alt="clickable">
+                            </div>
+                            <div class="c-table__title-cell u-col-17" >
+                                対象とするニーズ
+                            </div>
+                            <div class="c-table__title-cell u-col-17">
+                                条件等
+                            </div>
+                            <div class="c-table__title-cell u-col-17">
+                                提案シーズ
+                            </div>
+                            <div class="c-table__title-cell u-col-8">
+                                提案のあった<br>
+                                    イベント
+                            </div>
+                            <div class="c-table__title-cell u-col-9">
+                                実証実験
+                            </div>
+                        </div>
+                        <a href="single_database_01.html" class="c-table__row">
+                            <div class="c-table__cell">
+                                近畿本部
+                            </div>
+                            <div class="c-table__cell">
+                                2020年
+                            </div>
+                            <div class="c-table__cell">
+                                点検
+                            </div>
+                            <div class="c-table__cell">
+                                道路
+                            </div>
+                            <div class="c-table__cell">
+                                新技術の導入
+                            </div>
+                            <div class="c-table__cell">
+                                道路法面保護施設（モルタル吹付）の地山との空洞化（密着度）やラス網の有無の調査技術
+                            </div>
+                            <div class="c-table__cell">
+                                レーザーによる探査計測を行い、現状の劣化や空隙状況を把握できる技術を求める。
+                            </div>
+                            <div class="c-table__cell">
+                                完全ケーブルレス地中レーダを用いたドローン計測
+                            </div>
+                            <div class="c-table__cell">
+                                第６回ピッチイベント
+                            </div>
+                            <div class="c-table__cell">
+                                <img src="../assets/img/pdf_ico.png" width="15" alt="PDF">第12回実証実験報告書
+                            </div>
+                        </a>
+                        <a href="single_database_02.html" class="c-table__row">
+                            <div class="c-table__cell">
+                                近畿本部
+                            </div>
+                            <div class="c-table__cell">
+                                2020年
+                            </div>
+                            <div class="c-table__cell">
+                                点検
+                            </div>
+                            <div class="c-table__cell">
+                                道路
+                            </div>
+                            <div class="c-table__cell">
+                                新技術の導入
+                            </div>
+                            <div class="c-table__cell">
+                                道路法面保護施設（モルタル吹付）の地山との空洞化（密着度）やラス網の有無の調査技術
+                            </div>
+                            <div class="c-table__cell">
+                                レーザーによる探査計測を行い、現状の劣化や空隙状況を把握できる技術を求める。
+                            </div>
+                            <div class="c-table__cell">
+                                完全ケーブルレス地中レーダを用いたドローン計測
+                            </div>
+                            <div class="c-table__cell">
+                                第６回ピッチイベント
+                            </div>
+                            <div class="c-table__cell">
+                                <img src="../assets/img/pdf_ico.png" width="15" alt="PDF">第12回実証実験報告書
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="c-table__row">
+                            <div class="c-table__cell">
+                                近畿本部
+                            </div>
+                            <div class="c-table__cell">
+                                2019年
+                            </div>
+                            <div class="c-table__cell">
+                                措置
+                            </div>
+                            <div class="c-table__cell">
+                                下水
+                            </div>
+                            <div class="c-table__cell">
+                                新技術の導入
+                            </div>
+                            <div class="c-table__cell">
+                                流入水における不明水対策<br>
+                                分流式の汚水管理における浸入水（不明水)対策
+                            </div>
+                            <div class="c-table__cell">
+                                幹線管渠の受入点直前のマンホールでの流量計の設置による発生箇所の絞り込み。<br>
+                                ○処理場での対応技術<br>
+                                ○施設の機能向上対策技術<br>
+                                ○運転管理での対策技術
+                            </div>
+                            <div class="c-table__cell">
+                                流入水によるマンホール内壁面の摩耗を防止するための防護材技術
+                            </div>
+                            <div class="c-table__cell">
+                                第６回ピッチイベント
+                            </div>
+                            <div class="c-table__cell">
+                                <img src="../assets/img/pdf_ico.png" width="15" alt="PDF">第13回実証実験報告書
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <%- include('inc/_pagination'); %>
+            </div>
+        </div>
+    </main>
+    <!--▲ Content are ▲-->
+    <%- include('inc/_footer'); %>
