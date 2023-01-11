@@ -16,6 +16,7 @@
         width: 18.87%;
         padding-top: 11.5px;
         font-weight: 600;
+        font-size: 1.8rem;
         &--required {
             &::after {
                 content: '※';
@@ -62,6 +63,40 @@
             padding: 7px 5px;
             width: 36.5%;
             margin: 0 auto;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-form {
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__label,
+        &__input {
+            width: 100%;
+        }
+        &__label {
+            font-size: 1.4rem;
+            padding-top: 0;
+        }
+        &__input {
+            font-size: 1.6rem;
+            margin-top: 10px;
+            span,input:not(:last-child),textarea:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        &__submit {
+            button,input[type="submit"] {
+                font-size: 1.4rem;
+                width: 40%;
+                max-width: 300px;
+            }
         }
     }
 }

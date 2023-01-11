@@ -1,0 +1,46 @@
+.p-contact {
+    padding-bottom: 20px;
+    &__info {
+        max-width: 847px;
+        margin: 47px auto 0;
+        h4{
+            font-size: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                margin-right: 42px;
+            }
+        }
+    }
+    &__infoContent {
+        margin-top: 30px;
+        h5 {
+            font-size: 1.8rem;
+        }
+        p {
+            margin-top: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-contact {
+        &__info {
+            margin-top: 20px;
+            h4 {
+                font-size: 2.2rem;
+                img {
+                    max-width: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__infoContent {
+            margin-top: 20px;
+            h5 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

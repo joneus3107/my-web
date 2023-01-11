@@ -1473,6 +1473,7 @@ body {
   width: 18.87%;
   padding-top: 11.5px;
   font-weight: 600;
+  font-size: 1.8rem;
 }
 .c-form__label--required::after {
   content: "※";
@@ -1518,8 +1519,36 @@ body {
   padding: 7px 5px;
   width: 36.5%;
   margin: 0 auto;
+  cursor: pointer;
+}
+.c-form__submit button:hover, .c-form__submit input[type=submit]:hover {
+  opacity: 0.6;
 }
 
+@media screen and (max-width: 768px) {
+  .c-form__row {
+    flex-wrap: wrap;
+  }
+  .c-form__label, .c-form__input {
+    width: 100%;
+  }
+  .c-form__label {
+    font-size: 1.4rem;
+    padding-top: 0;
+  }
+  .c-form__input {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  .c-form__input span, .c-form__input input:not(:last-child), .c-form__input textarea:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .c-form__submit button, .c-form__submit input[type=submit] {
+    font-size: 1.4rem;
+    width: 40%;
+    max-width: 300px;
+  }
+}
 /*------------------------------------------------------------
 other
 ------------------------------------------------------------*/
@@ -2269,6 +2298,50 @@ other
   }
   .p-about .l-child-page__article h4, .p-about .l-child-page__article h3 {
     font-size: 1.8rem;
+  }
+}
+.p-contact {
+  padding-bottom: 20px;
+}
+.p-contact__info {
+  max-width: 847px;
+  margin: 47px auto 0;
+}
+.p-contact__info h4 {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-contact__info h4 img {
+  margin-right: 42px;
+}
+.p-contact__infoContent {
+  margin-top: 30px;
+}
+.p-contact__infoContent h5 {
+  font-size: 1.8rem;
+}
+.p-contact__infoContent p {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-contact__info {
+    margin-top: 20px;
+  }
+  .p-contact__info h4 {
+    font-size: 2.2rem;
+  }
+  .p-contact__info h4 img {
+    max-width: 30px;
+    margin-right: 20px;
+  }
+  .p-contact__infoContent {
+    margin-top: 20px;
+  }
+  .p-contact__infoContent h5 {
+    font-size: 1.6rem;
   }
 }
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
