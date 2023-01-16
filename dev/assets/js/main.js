@@ -4,6 +4,10 @@ $(document).ready( function(){
         check_height()
     })
 
+    $('.p-memberApplicate__list li > h4').click(function(){
+        $(this).parent().find('p').slideToggle()
+    })
+
     $('.c-header__navBar').click(function(){
         $('.c-header').toggleClass('is-active')
     })
@@ -11,7 +15,6 @@ $(document).ready( function(){
     $('.l-child-page__spBar').click(function(){
         $('.l-child-page__aside').toggleClass('is-active')
     })
-
     AOS.init();
 })
 

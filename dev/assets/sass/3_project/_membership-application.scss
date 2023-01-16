@@ -1,0 +1,84 @@
+.p-memberApplicate {
+    .l-child-page__article {
+        padding-bottom: 40px;
+    }
+    &__intro {
+        display: flex;
+        &Txt {
+            flex: 1;
+            padding-right: 13px;
+            h3 {
+                margin-bottom: 25px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        &Img {
+            width: 32.5%;
+        }
+    }
+    &__banner {
+        margin-top: 30px;
+    }
+    &__list {
+        margin-top: 30px;
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        h4 {
+            color: #fff;
+            background-color: var(--primary);
+            position: relative;
+            font-size: 1.8rem;
+            padding: 2px 4px;
+            font-weight: normal;
+            cursor: pointer;
+            &:hover {
+                background-color: #5fb4b6db;
+            }
+            &::before {
+                content: '▼';
+                position: absolute;
+                top: 50%;
+                right: 1%;
+                transform: translateY(-50%) rotate(0);
+                transition: 0.3s all ease-in-out;
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            padding-top: 10px;
+            display: none;
+        }
+        li {
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-memberApplicate {
+        &__intro {
+            flex-wrap: wrap;
+            &Txt {
+                width: 100%;
+                flex: unset;
+            }
+            &Img {
+                width: 60%;
+                margin: 20px auto 0;
+            }
+        }
+        &__list {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            h4 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

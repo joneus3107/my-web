@@ -46,7 +46,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  transition: 0.3s all ease-in-out;
   box-sizing: border-box;
 }
 
@@ -466,9 +465,9 @@ body {
     transition: all 0.4s;
     box-sizing: border-box;
     width: 40px;
-    height: 30px;
+    height: 42px;
     background-color: var(--red);
-    padding: 6px;
+    padding: 12px 6px;
     border-radius: 0 8px 8px 0;
     overflow: hidden;
     opacity: 0.3;
@@ -1473,7 +1472,7 @@ body {
 }
 .c-form {
   width: 90%;
-  max-width: 874px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .c-form__notice {
@@ -1487,7 +1486,7 @@ body {
   margin: 20px 0;
 }
 .c-form__label {
-  width: 18.87%;
+  width: 21%;
   padding-top: 11.5px;
   font-weight: 600;
   font-size: 1.8rem;
@@ -1499,17 +1498,14 @@ body {
   margin-left: 10px;
   font-weight: 600;
 }
+.c-form__label span {
+  float: right;
+}
 .c-form__input {
-  width: 81.13%;
+  width: 78%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-.c-form__input span {
-  font-size: 2rem;
-  padding-right: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
 }
 .c-form__input input, .c-form__input textarea {
   max-width: 100%;
@@ -1521,6 +1517,28 @@ body {
   border: 1px solid #000;
 }
 .c-form__input input:not(:last-child), .c-form__input textarea:not(:last-child) {
+  margin-bottom: 20px;
+}
+.c-form__radio {
+  display: inline-flex;
+  align-items: center;
+}
+.c-form__radio:not(:last-child) {
+  margin-right: 15px;
+}
+.c-form__radio input {
+  flex: unset;
+  font-size: unset;
+  min-width: unset;
+  margin: 0 6px 0 0 !important;
+}
+.c-form__radio span {
+  display: inline-block;
+}
+.c-form__addrSymbol {
+  font-size: 2rem;
+  padding-right: 10px;
+  display: inline-block;
   margin-bottom: 20px;
 }
 .c-form__submit {
@@ -1541,6 +1559,9 @@ body {
 .c-form__submit button:hover, .c-form__submit input[type=submit]:hover {
   opacity: 0.6;
 }
+.c-form__small {
+  margin-top: 25px;
+}
 
 @media screen and (max-width: 768px) {
   .c-form__row {
@@ -1552,6 +1573,12 @@ body {
   .c-form__label {
     font-size: 1.4rem;
     padding-top: 0;
+  }
+  .c-form__label span {
+    display: block;
+    float: unset;
+    margin-top: 10px;
+    font-weight: normal;
   }
   .c-form__input {
     font-size: 1.6rem;
@@ -2392,6 +2419,82 @@ other
   padding-bottom: 20px;
 }
 
+.p-memberApplicate .l-child-page__article {
+  padding-bottom: 40px;
+}
+.p-memberApplicate__intro {
+  display: flex;
+}
+.p-memberApplicate__introTxt {
+  flex: 1;
+  padding-right: 13px;
+}
+.p-memberApplicate__introTxt h3 {
+  margin-bottom: 25px;
+}
+.p-memberApplicate__introTxt p {
+  margin-bottom: 20px;
+}
+.p-memberApplicate__introImg {
+  width: 32.5%;
+}
+.p-memberApplicate__banner {
+  margin-top: 30px;
+}
+.p-memberApplicate__list {
+  margin-top: 30px;
+}
+.p-memberApplicate__list:not(:last-child) {
+  margin-bottom: 50px;
+}
+.p-memberApplicate__list h4 {
+  color: #fff;
+  background-color: var(--primary);
+  position: relative;
+  font-size: 1.8rem;
+  padding: 2px 4px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.p-memberApplicate__list h4:hover {
+  background-color: rgba(95, 180, 182, 0.8588235294);
+}
+.p-memberApplicate__list h4::before {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.3s all ease-in-out;
+  font-size: 1.2rem;
+}
+.p-memberApplicate__list p {
+  padding-top: 10px;
+  display: none;
+}
+.p-memberApplicate__list li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-memberApplicate__intro {
+    flex-wrap: wrap;
+  }
+  .p-memberApplicate__introTxt {
+    width: 100%;
+    flex: unset;
+  }
+  .p-memberApplicate__introImg {
+    width: 60%;
+    margin: 20px auto 0;
+  }
+  .p-memberApplicate__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .p-memberApplicate__list h4 {
+    font-size: 1.6rem;
+  }
+}
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/

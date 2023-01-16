@@ -1,6 +1,6 @@
 .c-form {
     width: 90%;
-    max-width: 874px;
+    max-width: 900px;
     margin: 0 auto;
     &__notice {
         color: var(--red);
@@ -13,7 +13,7 @@
         margin: 20px 0;
     }
     &__label {
-        width: 18.87%;
+        width: 21%;
         padding-top: 11.5px;
         font-weight: 600;
         font-size: 1.8rem;
@@ -26,18 +26,16 @@
                 font-weight: 600;
             }
         }
+        span {
+            float: right;
+        }
     }
     &__input {
-        width: calc(100% - 18.87%);
+        width: calc(100% - 22%);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        span {
-            font-size: 2rem;
-            padding-right: 10px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
+        
         input,textarea {
             max-width: 100%;
             min-width: 70%;
@@ -50,6 +48,28 @@
                 margin-bottom: 20px;
             }
         }
+    }
+    &__radio {
+        display: inline-flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        input {
+            flex: unset;
+            font-size: unset;
+            min-width: unset;
+            margin: 0 6px 0 0!important;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+    &__addrSymbol {
+        font-size: 2rem;
+        padding-right: 10px;
+        display: inline-block;
+        margin-bottom: 20px;
     }
     &__submit {
         text-align: center;
@@ -69,6 +89,9 @@
             }
         }
     }
+    &__small {
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -83,6 +106,12 @@
         &__label {
             font-size: 1.4rem;
             padding-top: 0;
+            span {
+                display: block;
+                float: unset;
+                margin-top: 10px;
+                font-weight: normal;
+            }
         }
         &__input {
             font-size: 1.6rem;
