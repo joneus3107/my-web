@@ -3,8 +3,14 @@
     --main-color: var(--red);
     position: sticky;
     top: calc(5% + 258.5px);
-    max-height: calc(100vh - (5vh - 258.5px));
+    max-height: calc(100vh - (5vh + 258.5px));
+    overflow-y: scroll;
     left: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
     h3 {
         color: var(--main-color);
         font-size: 2.5rem;
