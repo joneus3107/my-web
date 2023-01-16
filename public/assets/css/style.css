@@ -94,7 +94,7 @@ input, textarea {
 .c-header {
   --header-bg: #cfe8e9;
   background-color: var(--header-bg);
-  padding: 30px 0 10px;
+  padding: 30px 0 0;
   position: sticky;
   top: 0;
   left: 0;
@@ -106,6 +106,7 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .c-header__logo {
   max-width: 43%;
@@ -1306,6 +1307,8 @@ body {
   padding: 24px 0 21px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  margin-top: 20px;
+  background: #fff;
 }
 .c-page-menu__list {
   display: flex;
@@ -1406,7 +1409,8 @@ body {
 .c-aboutNav {
   --border-color: #2318158a;
   position: sticky;
-  top: calc(5% + 85px);
+  top: calc(5% + 258.5px);
+  max-height: calc(100vh - (5vh - 258.5px));
   left: 0;
 }
 .c-aboutNav h3 {

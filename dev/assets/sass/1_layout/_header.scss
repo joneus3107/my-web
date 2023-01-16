@@ -4,7 +4,7 @@
     --header-bg: #cfe8e9;
 
     background-color: var(--header-bg);
-    padding: 30px 0 10px;
+    padding: 30px 0 0;
     position: sticky;
     top: 0;
     left: 0;
@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 20px;
     }
     &__logo {
         max-width: 43%;

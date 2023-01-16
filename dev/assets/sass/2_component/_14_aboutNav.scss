@@ -1,7 +1,8 @@
 .c-aboutNav {
     --border-color: #2318158a;
     position: sticky;
-    top: calc(5% + 85px);
+    top: calc(5% + 258.5px);
+    max-height: calc(100vh - (5vh - 258.5px));
     left: 0;
     h3 {
         color: var(--red);
