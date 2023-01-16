@@ -1,166 +1,220 @@
 <%- include('inc/_header'); %>
 <!--▼ Content area ▼-->
-<main class="p-forum-news" style="--mainColor: var(--royal-blue)">
-    <section class="c-forum-mv">
-        <h3 class="c-forum-mv__title">
-            <div class="l-container">
-                イベント情報
+<main class="p-forum">
+    <div class="l-container">
+        <ul class="c-breadcrumb">
+            <li class="c-breadcrumb__homepage">
+                <a href="index.html">
+                    <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
+                </a>
+            </li>
+            <li>
+                公認フォーラム
+            </li>
+        </ul>
+        <div class="l-child-page">
+            <div class="l-child-page__aside">
+                <div class="l-child-page__spBar">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <!--▼ Content area ▼-->
+                <%- include('inc/_forumNav'); %>
+                <!--▲ Content are ▲-->
             </div>
-        </h3>
-        <div class="l-container">
-            <ul class="c-breadcrumb">
-                <li class="c-breadcrumb__homepage">
-                    <a href="index.html">
-                        <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
-                    </a>
-                </li>
-                <li>
-                    ○○○○○○○
-                </li>
-            </ul>
-            <div class="c-forum-mv__content">
-                <div class="c-forum-mv__intro">
-                    <h3>北海道フォーラム</h3>
-                    <ul>
-                        <li>新着情報</li>
-                        <li>イベント情報</li>
-                        <li>活動紹介</li>
-                    </ul>
-                </div>
-                <div class="c-forum-mv__map">
-                    <img src="../assets/img/hokkaido_map.svg" width="705" alt="map">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="p-forum-news1">
-        <div class="l-container">
-            <div class="l-child-page">
-                <div class="l-child-page__aside">
-                    <%- include('inc/_sidebar'); %>
-                </div>
-                <div class="l-child-page__article">
-                    <div class="c-list-news c-list-news--no-img">
+            <div class="l-child-page__article">
+                <section class="p-forum__mainVisual">
+                    <div class="p-forum__box1">
+                        <nav>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/technology.svg"
+                                alt="革新的技術"
+                                width="55"
+                              />
+                              <span>革新的技術</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/local_support.svg"
+                                alt="自治体支援"
+                                width="62.8"
+                              />
+                              <span>自治体支援</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/nurturing.svg"
+                                alt="技術者育成"
+                                width="49.5"
+                              />
+                              <span>技術者育成</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/citizen.svg"
+                                alt="市民参画"
+                                width="60.3"
+                              />
+                              <span>市民参画</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/oversea_market.svg"
+                                alt="海外市場展開"
+                                width="52.2"
+                              />
+                              <span>
+                                海外市場<br />
+                                展 開
+                              </span>
+                            </a>
+                        </nav>
+                        <img src="../assets/img/mv_map.png" alt="japan_map">
+                    </div>
+                </section>
+                <section class="p-forum__content">
+                    <div class="c-list-news">
                         <div class="c-list-news__title">
-                            <h3>新着情報</h3>
+                            <img
+                            src="../assets/img/activity-ico.svg"
+                            width="80.9"
+                            alt="活動紹介"
+                          />
+                          <h3>活動紹介</h3>
                         </div>
                         <ul class="c-list-news__content">
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        ○○○○○○○○○○○○○○○○○○○<br>
-                                        ○○○○○○○○○○○○○○○○○○○○○○
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        <img src="../assets/img/dummy-image.png" alt="thumbnail" width="77">
-                                        <span>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○
-                                        </span>
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        ○○○○○○○○○○○○○○○○○○○<br>
-                                        ○○○○○○○○○○○○○○○○○○○○○○
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        <img src="../assets/img/dummy-image.png" alt="thumbnail" width="77">
-                                        <span>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○
-                                        </span>
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        ○○○○○○○○○○○○○○○○○○○<br>
-                                        ○○○○○○○○○○○○○○○○○○○○○○
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        <img src="../assets/img/dummy-image.png" alt="thumbnail" width="77">
-                                        <span>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○
-                                        </span>
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        ○○○○○○○○○○○○○○○○○○○<br>
-                                        ○○○○○○○○○○○○○○○○○○○○○○
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        <img src="../assets/img/dummy-image.png" alt="thumbnail" width="77">
-                                        <span>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○
-                                        </span>
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        ○○○○○○○○○○○○○○○○○○○<br>
-                                        ○○○○○○○○○○○○○○○○○○○○○○
-                                    </a>
-                                </h5>
-                            </li>
-                            <li>
-                                <p>0000.0.00</p>
-                                <h5>
-                                    <a href="single-forum.html">
-                                        <img src="../assets/img/dummy-image.png" alt="thumbnail" width="77">
-                                        <span>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○<br>
-                                            ○○○○○○○○○○○○○○○○○○○
-                                        </span>
-                                    </a>
-                                </h5>
-                            </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-yellow)">中国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-green)">近畿フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-purple)">東北フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-blue)">関東フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-orange)">四国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-str-green)">中部フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-green)">近畿フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-purple)">東北フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-blue)">関東フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-orange)">四国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-str-green)">中部フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
                         </ul>
                     </div>
-                </div>
+                    <%- include('inc/_pagination'); %>
+                </section>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 <!--▲ Content are ▲-->
 <%- include('inc/_footer'); %>

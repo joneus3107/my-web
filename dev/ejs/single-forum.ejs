@@ -1,50 +1,65 @@
 <%- include('inc/_header'); %>
 <!--▼ Content area ▼-->
-<main class="p-single-forum" style="--mainColor: var(--royal-blue)">
-    <section class="c-forum-mv">
-        <h3 class="c-forum-mv__title">
-            <div class="l-container">
-                公認フォーラム
+<main class="p-forum">
+    <div class="l-container">
+        <ul class="c-breadcrumb">
+            <li class="c-breadcrumb__homepage">
+                <a href="index.html">
+                    <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
+                </a>
+            </li>
+            <li>
+              北海道フォーラム
+            </li>
+        </ul>
+        <div class="l-child-page">
+            <div class="l-child-page__aside">
+                <div class="l-child-page__spBar">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <!--▼ Content area ▼-->
+                <%- include('inc/_forumNav'); %>
+                <!--▲ Content are ▲-->
             </div>
-        </h3>
-        <div class="l-container">
-            <ul class="c-breadcrumb">
-                <li class="c-breadcrumb__homepage">
-                    <a href="index.html">
-                        <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
-                    </a>
-                </li>
-                <li>
-                    ○○○○○○○
-                </li>
-            </ul>
-            <div class="c-forum-mv__content">
-                <div class="c-forum-mv__intro">
-                    <h3>北海道フォーラム</h3>
-                    <ul>
-                        <li>新着情報</li>
-                        <li>イベント情報</li>
-                        <li>活動紹介</li>
-                    </ul>
-                </div>
-                <div class="c-forum-mv__map">
-                    <img src="../assets/img/hokkaido_map.svg" width="705" alt="map">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="p-single-forum1">
-        <div class="l-container">
-            <div class="l-child-page">
-                <div class="l-child-page__aside">
-                    <%- include('inc/_sidebar'); %>
-                </div>
-                <div class="l-child-page__article">
-                    <div class="p-single-forum__content">
-                        <div class="p-single-forum__article">
-                            <h3 class="p-single-forum__title">
-                                イベント情報
-                            </h3>
+            <div class="l-child-page__article">
+                <h2  class="c-page-title p-about__title">北海道フォーラム</h2>
+                <section class="p-forum__mainVisual">
+                    <div class="p-forum__box2" style="--main-color: var(--royal-blue)">
+                        <div class="content">
+                          <h2>
+                            <?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ヘッダー" data-name="ヘッダー" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.33 27.33">
+  <defs>
+  </defs>
+  <path class="cls-1" d="m13.66,0l13.66,13.66-13.66,13.66L0,13.66,13.66,0Z"/>
+</svg>
+                            北海道フォーラム
+                          </h2>
+                          <p>
+                            平成30年3月23日に設立し、北海道内の地方公共団体が管理する土木施設・公共施設の適切なメンテナンスを継続していくため、 産学官民の技術や知恵を総動員するプラット フォーラムとして、活動しています。
+                          </p>
+                        </div>
+                        <div class="leader">
+                          <p>
+                            <span>リーダー 高野 伸栄</span><br>
+                            <span>北海道大学大学院工学研究院教授</span>
+                          </p>
+                          <img src="../assets/img/nobuaki-takano.png" alt="leader" width="134">
+                        </div>
+                        <img src="../assets/img/hokkaido_bg.svg" alt="hokkaido_map" class="map">
+                    </div>
+                </section>
+                <div class="p-forum__content">
+                    <section class="p-single-forum">
+                        <div class="p-single-forum__title">
+                            <img src="../assets/img/news-ico.svg" width="100" alt="新着情報" />
+                            <h3>新着情報</h3>
+                        </div>
+                        <div class="p-single-forum__content">
                             <p class="p-single-forum__date">0000.0.00</p>
                             <div class="p-single-forum__thumbnail">
                                 <img src="https://dummyimage.com/600x400/000/fff" alt="thumbnail">
@@ -74,43 +89,12 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="p-single-forum__aside">
-                            <h4>最近の動き</h4>
-                            <h5>インフラメンテナンス国民会議</h5>
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/img/banner-01.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/img/banner-02.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/img/banner-03.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/img/banner-04.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/img/banner-05.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
+                    </section>
                 </div>
+                <%- include('inc/_contactInfo'); %>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 <!--▲ Content are ▲-->
 <%- include('inc/_footer'); %>

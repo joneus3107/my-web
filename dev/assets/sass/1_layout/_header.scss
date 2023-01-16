@@ -15,7 +15,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 20px;
+        &.l-container {
+            padding-bottom: 20px;
+        }
     }
     &__logo {
         max-width: 43%;
@@ -59,7 +61,12 @@
 
 @media screen and (max-width: 768px) {
     .c-header {
-        padding: 20px 0 10px;
+        padding: 20px 0 0;
+        &__box {
+            &.l-container {
+                padding-bottom: 10px;
+            }
+        }
         &__logo {
             max-width: 35%;
         }
