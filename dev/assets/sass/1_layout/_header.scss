@@ -88,6 +88,7 @@
             border-top: 8px solid var(--primary);
             z-index: 5;
             overflow-y: scroll;
+            transition: 0.3s all ease-in-out;
             dl {
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -206,6 +207,7 @@
                 &__menu {
                     transform: translate(0,100%);
                     opacity: 1;
+                    transition: 0.4s all ease-in-out;
                 }
             }
         }

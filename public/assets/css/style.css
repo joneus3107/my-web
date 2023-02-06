@@ -173,6 +173,7 @@ input, textarea {
     border-top: 8px solid var(--primary);
     z-index: 5;
     overflow-y: scroll;
+    transition: 0.3s all ease-in-out;
   }
   .c-header__menu dl {
     flex-wrap: wrap;
@@ -285,6 +286,7 @@ input, textarea {
   .c-header.is-active .c-header__menu {
     transform: translate(0, 100%);
     opacity: 1;
+    transition: 0.4s all ease-in-out;
   }
 }
 /* Main menu
@@ -1197,6 +1199,7 @@ body {
 
 .c-breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   margin: 55px 0 30px;
 }
@@ -2188,6 +2191,15 @@ other
   .p-forum .c-list-news:not(:last-child) {
     margin-bottom: 30px;
   }
+  .p-forum__box1 nav {
+    width: 57%;
+  }
+  .p-forum__box1 nav a span {
+    font-size: 1rem;
+  }
+  .p-forum__box1 nav a img {
+    max-width: 80%;
+  }
 }
 .p-forum-news {
   padding-bottom: 50px;
@@ -2493,6 +2505,157 @@ other
   }
   .p-memberApplicate__list h4 {
     font-size: 1.6rem;
+  }
+}
+.p-meeting__banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.p-meeting__banner img {
+  max-width: 80%;
+}
+.p-meeting__content {
+  padding-bottom: 60px;
+}
+.p-meeting__tabsList, .p-meeting__tabItem a {
+  display: flex;
+}
+.p-meeting__tabsList {
+  margin-bottom: 30px;
+}
+.p-meeting__tabItem {
+  --main-color: var(--primary);
+  --border-color: #2318158a;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  border: 1px solid transparent;
+  border-bottom: 4px solid var(--main-color);
+  transition: 0.3s all ease-in-out;
+}
+.p-meeting__tabItem:not(:last-child):not(:first-child) {
+  margin: 0 10px;
+}
+.p-meeting__tabItem a {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+.p-meeting__tabItem a img {
+  margin-right: 10px;
+}
+.p-meeting__tabItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: var(--main-color);
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.p-meeting__tabItem:hover, .p-meeting__tabItem.is-active {
+  border: 1px solid var(--border-color);
+  border-bottom: 4px solid var(--main-color);
+}
+.p-meeting__tabItem:hover::after, .p-meeting__tabItem.is-active::after {
+  transition: 0.4s all ease-in-out;
+  opacity: 0.2;
+}
+.p-meeting__newsHead, .p-meeting__newsInfo {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.p-meeting__newsContent h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.p-meeting__newsContent p {
+  margin-bottom: 30px;
+}
+.p-meeting__newsInfo ul {
+  width: 100%;
+}
+.p-meeting__newsInfo li {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 15px 0;
+}
+.p-meeting__newsInfo li:not(:last-child) {
+  border-bottom: 2px solid rgba(35, 24, 21, 0.5411764706);
+}
+.p-meeting__newsInfo li p {
+  width: 15%;
+}
+.p-meeting__newsInfo li p:last-child {
+  width: 85%;
+  padding-left: 20px;
+}
+.p-meeting__newsInfo li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #fff;
+}
+.p-meeting__newsDetail h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  text-align: center;
+  margin: 40px 0;
+}
+.p-meeting__newsDate {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .p-meeting__banner img {
+    max-width: 60%;
+  }
+  .p-meeting__tabItem:not(:last-child):not(:first-child) {
+    margin: 0 5px;
+  }
+  .p-meeting__tabItem a {
+    flex-direction: column;
+    padding: 5px 3px;
+  }
+  .p-meeting__tabItem a img {
+    margin-right: 0;
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+  .p-meeting__tabItem a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+  }
+  .p-meeting__tabItem a:hover {
+    border: 1px solid var(--border-color);
+    border-bottom: 4px solid var(--main-color);
+  }
+  .p-meeting__tabItem a:hover::after {
+    transition: 0.4s all ease-in-out;
+    opacity: 0.2;
   }
 }
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

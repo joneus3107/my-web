@@ -1,0 +1,216 @@
+<%- include('inc/_header'); %>
+<!--▼ Content area ▼-->
+<main class="p-forum">
+    <div class="l-container">
+        <ul class="c-breadcrumb">
+            <li class="c-breadcrumb__homepage">
+                <a href="index.html">
+                    <img src="../assets/img/breadcrumb_home.svg" width="38" alt="homepage">
+                </a>
+            </li>
+            <li>
+                公認フォーラム
+            </li>
+        </ul>
+        <div class="l-child-page">
+            <div class="l-child-page__aside">
+                <div class="l-child-page__spBar">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <!--▼ Content area ▼-->
+                <%- include('inc/_forumNav'); %>
+                <!--▲ Content are ▲-->
+            </div>
+            <div class="l-child-page__article">
+                <section class="p-forum__mainVisual">
+                    <div class="p-forum__box1">
+                        <nav>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/technology.svg"
+                                alt="革新的技術"
+                                width="55"
+                              />
+                              <span>革新的技術</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/local_support.svg"
+                                alt="自治体支援"
+                                width="62.8"
+                              />
+                              <span>自治体支援</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/nurturing.svg"
+                                alt="技術者育成"
+                                width="49.5"
+                              />
+                              <span>技術者育成</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/citizen.svg"
+                                alt="市民参画"
+                                width="60.3"
+                              />
+                              <span>市民参画</span>
+                            </a>
+                            <a href="javascript:void(0)" class="c-box__btn">
+                              <img
+                                src="../assets/img/oversea_market.svg"
+                                alt="海外市場展開"
+                                width="52.2"
+                              />
+                              <span>
+                                海外市場<br />
+                                展 開
+                              </span>
+                            </a>
+                        </nav>
+                        <img src="../assets/img/mv_map.png" alt="japan_map">
+                    </div>
+                </section>
+                <section class="p-forum__content">
+                    <div class="c-list-news">
+                        <div class="c-list-news__title">
+                          <img src="../assets/img/news-ico.svg" width="100" alt="新着情報" />
+                          <h3>新着情報</h3>
+                        </div>
+                        <ul class="c-list-news__content">
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-yellow)">中国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-green)">近畿フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-purple)">東北フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-blue)">関東フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-orange)">四国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-str-green)">中部フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-green)">近畿フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-purple)">東北フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-blue)">関東フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-orange)">四国フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                          <li class="c-list-news__item">
+                            <p class="c-list-news__date">0000.0.00</p>
+                            <div class="c-list-news__cat">
+                               <span style="--bg-color: var(--cat-str-green)">中部フォーラム</span>
+                            </div>
+                            <h5 class="c-list-news__item-title">
+                              <a href="javascript:void(0)">
+                                <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○...</p>
+                              </a>
+                            </h5>
+                          </li>
+                        </ul>
+                    </div>
+                    <%- include('inc/_pagination'); %>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<!--▲ Content are ▲-->
+<%- include('inc/_footer'); %>
