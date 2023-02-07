@@ -2,9 +2,7 @@
 ------------------------------------------------------------*/
 .c-header{
     --header-bg: #cfe8e9;
-
     background-color: var(--header-bg);
-    padding: 30px 0 0;
     position: sticky;
     top: 0;
     left: 0;
@@ -16,7 +14,8 @@
         align-items: center;
         justify-content: space-between;
         &.l-container {
-            padding-bottom: 20px;
+            padding-bottom: 40px;
+            padding-top: 30px;
         }
     }
     &__logo {
@@ -61,9 +60,9 @@
 
 @media screen and (max-width: 768px) {
     .c-header {
-        padding: 20px 0 0;
         &__box {
             &.l-container {
+                padding-top: 20px;
                 padding-bottom: 10px;
             }
         }

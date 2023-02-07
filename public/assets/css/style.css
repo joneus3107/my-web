@@ -93,7 +93,6 @@ input, textarea {
 .c-header {
   --header-bg: #cfe8e9;
   background-color: var(--header-bg);
-  padding: 30px 0 0;
   position: sticky;
   top: 0;
   left: 0;
@@ -107,7 +106,8 @@ input, textarea {
   justify-content: space-between;
 }
 .c-header__box.l-container {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 .c-header__logo {
   max-width: 43%;
@@ -146,10 +146,8 @@ input, textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .c-header {
-    padding: 20px 0 0;
-  }
   .c-header__box.l-container {
+    padding-top: 20px;
     padding-bottom: 10px;
   }
   .c-header__logo {
@@ -1314,7 +1312,6 @@ body {
   padding: 24px 0 21px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  margin-top: 20px;
   background: #fff;
 }
 .c-page-menu__list {
